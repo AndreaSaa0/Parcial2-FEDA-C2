@@ -22,4 +22,4 @@ class Directory:
 
     def list_contacts(self):
         for contact in self.contacts:
-            print(contact.obtener_datos())
+            print(contact.get_add())

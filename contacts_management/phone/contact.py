@@ -17,5 +17,5 @@ class Contact:
         self.telefono = telefono
         self.direccion = direccion
     
-    def obtener_datos(self):
+    def get_add(self):
         return [self.nombre, self.apellido, self.organizacion, self.telefono, self.direccion]
