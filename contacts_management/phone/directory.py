@@ -1,3 +1,5 @@
+from phone.contact import Contact
+
 class Directory:
     """
     Clase Directorio:
@@ -12,10 +14,12 @@ class Directory:
     """
 
     def __init__(self):
-        pass
+        self.contacts = []
 
-    def add_contact(self):
-        pass
+    def add_contact(self, nombre, apellido, organizacion, telefono, direccion):
+        nuevo_contacto = Contact(nombre, apellido, organizacion, telefono, direccion)
+        self.contacts.append(nuevo_contacto)
 
     def list_contacts(self):
-        pass
+        for contact in self.contacts:
+            print(contact.obtener_datos())
