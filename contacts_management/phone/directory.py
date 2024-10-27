@@ -21,5 +21,7 @@ class Directory:
         self.contacts.append(nuevo_contacto)
 
     def list_contacts(self):
+        print(f"{'Nombre':<15} {'Apellido':<15} {'Organización':<20} {'Teléfono':<15} {'Dirección':<30}")
         for contact in self.contacts:
-            print(contact.get_add())
+            nombre, apellido, organizacion, telefono, direccion = contact.get_add()
+            print(f"{nombre:<15} {apellido:<15} {organizacion:<20} {telefono:<15} {direccion:<30}")
